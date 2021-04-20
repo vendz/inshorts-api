@@ -1,5 +1,5 @@
 # Inshorts API [Unofficial]
----
+
 This API is capable of fetching news contents from various sources as gathered by Inshorts app.
 
 ---
@@ -45,7 +45,7 @@ Example - https://inshort.vandit.cf/shorts/categories
 
 The response JSON Object looks something like this - 
 
-```JSON
+```
 {
   "category": "technology",
   "data": [
