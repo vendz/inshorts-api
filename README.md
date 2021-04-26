@@ -28,7 +28,7 @@ This API supports category wise news. Here is a complete list of all categories.
 
 Make a request specifying the category of news you want
 ```
-https://inshorts.vandit.cf/shorts/technology
+https://inshorts.vandit.cf/shorts/<Enter-a-category>
 ```
 Example - https://inshorts.vandit.cf/shorts/technology
 
