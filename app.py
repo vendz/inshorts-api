@@ -1,8 +1,10 @@
 from flask import Flask, jsonify, request
 from inshorts import getNews
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+app.secret_key = "LOVE_YOU_3000"
+CORS(app)
 
 @app.route('/')
 def index():
