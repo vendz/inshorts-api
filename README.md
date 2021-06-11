@@ -28,16 +28,16 @@ This API supports category wise news. Here is a complete list of all categories.
 
 Make a request specifying the category of news you want
 ```
-https://inshort.vandit.cf/shorts/technology
+https://inshorts.vandit.cf/shorts/<Enter-a-category>
 ```
-Example - https://inshort.vandit.cf/shorts/technology
+Example - https://inshorts.vandit.cf/shorts/technology
 
 ---
 see all the available categories
 ```
-https://inshort.vandit.cf/shorts/categories
+https://inshorts.vandit.cf/shorts/categories
 ```
-Example - https://inshort.vandit.cf/shorts/categories
+Example - https://inshorts.vandit.cf/shorts/categories
 
 ---
 
