@@ -9,26 +9,28 @@ def index():
     return "API is UP and running"
 
 
-@app.route('/shorts/categories')
+@app.route('/categories')
 def categories():
-    return "<a href = 'https://inshort.vandit.cf/shorts/all'>1. All News</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/india'>2. India</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/business'>3. Business</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/sports'>4. sports</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/world'>5. World</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/politics'>6. Politics</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/technology'>7. Technology</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/startup'>8. Startup</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/entertainment'>9. Entertainment</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/miscellaneous'>10. Miscellaneous</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/hatke'>11. Hatke</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/science'>12. Science</a><br>" \
-           "<a href = 'https://inshort.vandit.cf/shorts/automobile'>13. Automobile</a><br>"
+    return "<a href = 'https://inshort.vandit.cf/shorts?category=all'>1. All News</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=india'>2. India</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=business'>3. Business</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=sports'>4. sports</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=world'>5. World</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=politics'>6. Politics</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=technology'>7. Technology</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=startup'>8. Startup</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=entertainment'>9. Entertainment</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=miscellaneous'>10. Miscellaneous</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=hatke'>11. Hatke</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=science'>12. Science</a><br>" \
+           "<a href = 'https://inshort.vandit.cf/shorts?category=automobile'>13. Automobile</a><br>"
 
 
-@app.route('/shorts/<category>', methods=['GET', 'POST'])
-def news(category):
-    return jsonify(getNews(category))
+@app.route('/shorts')
+def news():
+    if request.method == 'GET':
+        category = request.args.get('category')
+        return jsonify(getNews(category))
 
 
 if __name__ == '__main__':
