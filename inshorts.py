@@ -27,7 +27,7 @@ def getNews(category):
         newsDictionary['error'] = 'Invalid Category'
         return newsDictionary
 
-    for index, card in enumerate(news_cards):
+    for card in enumerate(news_cards):
         try:
             title = card.find('div', class_="news-card-title").find('a').text.strip()
         except AttributeError:
