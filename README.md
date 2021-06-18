@@ -91,6 +91,9 @@ Install all dependencies listed in *requirements.txt* file.
     ```
 ---
 
+### This API was used to build a [News app](https://github.com/vendz/news-app-flutter)
+---
+
 ### You can fork the repo and deploy on VPS, Heroku or Vercel :)
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vendz/inshorts-api/tree/main)
 
