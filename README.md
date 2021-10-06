@@ -9,7 +9,7 @@ This API is capable of fetching news contents from various sources as gathered b
 This API supports category wise news. Here is a complete list of all categories.
 
 1. all
-2. national //Indian News only
+2. national `Indian News only`
 3. business
 4. sports
 5. world
